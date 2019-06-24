@@ -29,7 +29,7 @@ print_even:
 	push ebx									;Push parameters for printf into the stack in reverse order
 	push fmt									;First the number is pushed and then the format specifier
 	call printf									
-	add esp, 4									
+	add esp, 8									
 	add ebx, 2									; Adds 2 to obtain next number
 	cmp ebx, 100								; Comparison to loop till 100
 	jle print_even
